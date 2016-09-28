@@ -1,0 +1,16 @@
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence">
+
+    <persistence-unit name="item-manager-pu" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value = "create"/>
+            <property name="hibernate.show_sql" value = "true"/>
+            <property name="hibernate.format_sql" value = "true"/>
+            <property name="current_session_context_class" value = "thread"/>
+            <property name="hibernate.connection.username" value="postgres"/>
+            <property name="hibernate.connection.password" value="123321"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/tmm"/>
+        </properties>
+    </persistence-unit>
+</persistence>
